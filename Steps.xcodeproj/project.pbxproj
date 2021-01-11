@@ -11,7 +11,45 @@
 		11716E4425A5E56F00154587 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11716E4325A5E56F00154587 /* ContentView.swift */; };
 		11716E4625A5E57000154587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11716E4525A5E57000154587 /* Assets.xcassets */; };
 		11716E4925A5E57000154587 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11716E4825A5E57000154587 /* Preview Assets.xcassets */; };
+		11716E5425A5E58900154587 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11716E5325A5E58900154587 /* HealthKit.framework */; };
+		11716E5825A5E5D500154587 /* HKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11716E5725A5E5D500154587 /* HKHelper.swift */; };
+		11716E5B25A5E60700154587 /* ErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11716E5A25A5E60700154587 /* ErrorFactory.swift */; };
+		11716E6425A6094A00154587 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11716E6325A6094A00154587 /* WidgetKit.framework */; };
+		11716E6625A6094A00154587 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11716E6525A6094A00154587 /* SwiftUI.framework */; };
+		11716E6925A6094A00154587 /* StepsWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11716E6825A6094A00154587 /* StepsWidget.swift */; };
+		11716E6B25A6094E00154587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11716E6A25A6094E00154587 /* Assets.xcassets */; };
+		11716E6F25A6094E00154587 /* StepsWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 11716E6225A6094A00154587 /* StepsWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		11716E7625A6095A00154587 /* HKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11716E5725A5E5D500154587 /* HKHelper.swift */; };
+		11716E7925A6095E00154587 /* ErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11716E5A25A5E60700154587 /* ErrorFactory.swift */; };
+		11716E7F25A634F400154587 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11716E5325A5E58900154587 /* HealthKit.framework */; };
+		117EFFDF25A74F010006C755 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117EFFDE25A74F010006C755 /* ProgressBar.swift */; };
+		117EFFEE25A7579A0006C755 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117EFFED25A7579A0006C755 /* View+Extensions.swift */; };
+		117EFFF425A75A800006C755 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117EFFDE25A74F010006C755 /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11716E6D25A6094E00154587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11716E3625A5E56F00154587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11716E6125A6094A00154587;
+			remoteInfo = StepsWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11716E7325A6094E00154587 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				11716E6F25A6094E00154587 /* StepsWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11716E3E25A5E56F00154587 /* Steps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Steps.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +58,19 @@
 		11716E4525A5E57000154587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11716E4825A5E57000154587 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11716E4A25A5E57000154587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11716E5125A5E58900154587 /* Steps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Steps.entitlements; sourceTree = "<group>"; };
+		11716E5325A5E58900154587 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		11716E5725A5E5D500154587 /* HKHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKHelper.swift; sourceTree = "<group>"; };
+		11716E5A25A5E60700154587 /* ErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorFactory.swift; sourceTree = "<group>"; };
+		11716E6225A6094A00154587 /* StepsWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StepsWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		11716E6325A6094A00154587 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		11716E6525A6094A00154587 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		11716E6825A6094A00154587 /* StepsWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsWidget.swift; sourceTree = "<group>"; };
+		11716E6A25A6094E00154587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11716E6C25A6094E00154587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11716E7E25A634F400154587 /* StepsWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepsWidgetExtension.entitlements; sourceTree = "<group>"; };
+		117EFFDE25A74F010006C755 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		117EFFED25A7579A0006C755 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +78,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11716E5425A5E58900154587 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11716E5F25A6094A00154587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11716E7F25A634F400154587 /* HealthKit.framework in Frameworks */,
+				11716E6625A6094A00154587 /* SwiftUI.framework in Frameworks */,
+				11716E6425A6094A00154587 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +98,11 @@
 		11716E3525A5E56F00154587 = {
 			isa = PBXGroup;
 			children = (
+				11716E7E25A634F400154587 /* StepsWidgetExtension.entitlements */,
 				11716E4025A5E56F00154587 /* Steps */,
+				11716E6725A6094A00154587 /* StepsWidget */,
 				11716E3F25A5E56F00154587 /* Products */,
+				11716E5225A5E58900154587 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				11716E3E25A5E56F00154587 /* Steps.app */,
+				11716E6225A6094A00154587 /* StepsWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,8 +118,10 @@
 		11716E4025A5E56F00154587 /* Steps */ = {
 			isa = PBXGroup;
 			children = (
+				117EFFD725A74ED00006C755 /* Views */,
+				11716E5625A5E5C600154587 /* Helpers */,
+				11716E5125A5E58900154587 /* Steps.entitlements */,
 				11716E4125A5E56F00154587 /* StepsApp.swift */,
-				11716E4325A5E56F00154587 /* ContentView.swift */,
 				11716E4525A5E57000154587 /* Assets.xcassets */,
 				11716E4A25A5E57000154587 /* Info.plist */,
 				11716E4725A5E57000154587 /* Preview Content */,
@@ -69,6 +137,45 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		11716E5225A5E58900154587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11716E5325A5E58900154587 /* HealthKit.framework */,
+				11716E6325A6094A00154587 /* WidgetKit.framework */,
+				11716E6525A6094A00154587 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11716E5625A5E5C600154587 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11716E5725A5E5D500154587 /* HKHelper.swift */,
+				11716E5A25A5E60700154587 /* ErrorFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		11716E6725A6094A00154587 /* StepsWidget */ = {
+			isa = PBXGroup;
+			children = (
+				11716E6825A6094A00154587 /* StepsWidget.swift */,
+				11716E6A25A6094E00154587 /* Assets.xcassets */,
+				11716E6C25A6094E00154587 /* Info.plist */,
+			);
+			path = StepsWidget;
+			sourceTree = "<group>";
+		};
+		117EFFD725A74ED00006C755 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11716E4325A5E56F00154587 /* ContentView.swift */,
+				117EFFDE25A74F010006C755 /* ProgressBar.swift */,
+				117EFFED25A7579A0006C755 /* View+Extensions.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +186,34 @@
 				11716E3A25A5E56F00154587 /* Sources */,
 				11716E3B25A5E56F00154587 /* Frameworks */,
 				11716E3C25A5E56F00154587 /* Resources */,
+				11716E7325A6094E00154587 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11716E6E25A6094E00154587 /* PBXTargetDependency */,
 			);
 			name = Steps;
 			productName = Steps;
 			productReference = 11716E3E25A5E56F00154587 /* Steps.app */;
 			productType = "com.apple.product-type.application";
+		};
+		11716E6125A6094A00154587 /* StepsWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11716E7025A6094E00154587 /* Build configuration list for PBXNativeTarget "StepsWidgetExtension" */;
+			buildPhases = (
+				11716E5E25A6094A00154587 /* Sources */,
+				11716E5F25A6094A00154587 /* Frameworks */,
+				11716E6025A6094A00154587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepsWidgetExtension;
+			productName = StepsWidgetExtension;
+			productReference = 11716E6225A6094A00154587 /* StepsWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +225,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					11716E3D25A5E56F00154587 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					11716E6125A6094A00154587 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -117,6 +246,7 @@
 			projectRoot = "";
 			targets = (
 				11716E3D25A5E56F00154587 /* Steps */,
+				11716E6125A6094A00154587 /* StepsWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +261,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		11716E6025A6094A00154587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11716E6B25A6094E00154587 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,10 +278,33 @@
 			files = (
 				11716E4425A5E56F00154587 /* ContentView.swift in Sources */,
 				11716E4225A5E56F00154587 /* StepsApp.swift in Sources */,
+				117EFFDF25A74F010006C755 /* ProgressBar.swift in Sources */,
+				11716E5825A5E5D500154587 /* HKHelper.swift in Sources */,
+				117EFFEE25A7579A0006C755 /* View+Extensions.swift in Sources */,
+				11716E5B25A5E60700154587 /* ErrorFactory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11716E5E25A6094A00154587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11716E7625A6095A00154587 /* HKHelper.swift in Sources */,
+				11716E6925A6094A00154587 /* StepsWidget.swift in Sources */,
+				117EFFF425A75A800006C755 /* ProgressBar.swift in Sources */,
+				11716E7925A6095E00154587 /* ErrorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11716E6E25A6094E00154587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11716E6125A6094A00154587 /* StepsWidgetExtension */;
+			targetProxy = 11716E6D25A6094E00154587 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		11716E4B25A5E57000154587 /* Debug */ = {
@@ -265,8 +426,10 @@
 		11716E4E25A5E57000154587 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Steps/Steps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
 				DEVELOPMENT_TEAM = CXJN356RX8;
@@ -280,15 +443,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pnikita.Steps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		11716E4F25A5E57000154587 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Steps/Steps.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Steps/Preview Content\"";
 				DEVELOPMENT_TEAM = CXJN356RX8;
@@ -302,7 +467,53 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.pnikita.Steps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		11716E7125A6094E00154587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CXJN356RX8;
+				INFOPLIST_FILE = StepsWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pnikita.Steps.StepsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		11716E7225A6094E00154587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = StepsWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CXJN356RX8;
+				INFOPLIST_FILE = StepsWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pnikita.Steps.StepsWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -323,6 +534,15 @@
 			buildConfigurations = (
 				11716E4E25A5E57000154587 /* Debug */,
 				11716E4F25A5E57000154587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11716E7025A6094E00154587 /* Build configuration list for PBXNativeTarget "StepsWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11716E7125A6094E00154587 /* Debug */,
+				11716E7225A6094E00154587 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
